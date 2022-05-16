@@ -1,0 +1,79 @@
+.mainInfoCard__flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.mainInfoCard__element {
+    width: 872px;
+    /* background: rgb(245, 245, 243); */
+    margin: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.linkToShopingCart__element {
+    width: 300px;
+    height: 475px;
+    background: rgb(118, 171, 118);
+    margin: 15px;
+    padding: 10px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.content_row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_element {
+    /* background: rgb(161, 161, 235); */
+    margin: 15px;
+}
+
+.imgBlock {
+    width: 400px;
+    height: 400px;
+}
+
+.imgElement {
+    width: 100%;
+}
+
+.text_row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_element {
+    margin-right: 20px;
+}
+
+.percent {
+    width: 80px;
+    text-align: center;
+    padding: 5px;
+    background: rgb(161, 166, 3);
+    color: white;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.line {
+    background: black;
+    height: 1px;
+}
