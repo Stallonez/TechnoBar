@@ -1,4 +1,5 @@
 import './InfoCard.css';
+import { Link } from 'react-router-dom';
 
 const InfoCard = (props) => {
     return <div>
@@ -28,6 +29,7 @@ const InfoCard = (props) => {
             </div>
             <div className='linkToShopingCart__element'>
                 Корзина
+                <Link to="/card">Добавить в корзину</Link>
             </div>
         </div>
     </div>
