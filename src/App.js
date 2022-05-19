@@ -3,7 +3,9 @@ import ShopingCart from "./components/ShopingCart/ShopingCart";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 
-function App() {
+
+function App(props) {
+  console.log(props);
   return (
     <BrowserRouter>
       <div>
