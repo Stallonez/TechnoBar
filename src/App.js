@@ -1,18 +1,15 @@
-// import Card from './components/Card/Card';
-// import ModalDialog from './components/ModalDialog/ModalDialog';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import InfoCard from "./components/InfoCard/InfoCard";
 import ShopingCart from "./components/ShopingCart/ShopingCart";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./components/Home/Home";
 
 function App() {
   return (
     <BrowserRouter>
       <div>
-        {/* <Card />
-      <ModalDialog /> */}
-        <InfoCard />
-        {/* <ShopingCart /> */}
+        <Navbar />
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/card" element={<ShopingCart />} />
         </Routes>
       </div>

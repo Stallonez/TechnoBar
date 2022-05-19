@@ -1,8 +1,9 @@
 import './ModalDialog.css';
 
-const ModalDialog = (props) => {
+const ModalDialog = ({ children, ...props }) => {
     return <div className={props.toggle ? 'openModal' : 'closeModal'}>
-        <button onClick={() => props.getToggle(false)}>closeModal</button>
+        <button onClick={() => props.getState(false)}>closeModal</button>
+        {children}
     </div>
 }
 
