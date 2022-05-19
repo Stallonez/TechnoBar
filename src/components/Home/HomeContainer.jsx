@@ -1,30 +1,35 @@
 import { useState } from "react";
+import { connect } from "react-redux";
 import Card from "../Card/Card";
 import InfoCard from "../InfoCard/InfoCard";
 import ModalDialog from "../ModalDialog/ModalDialog";
+import Home from "./Home";
 
-const Home = (props) => {
+const HomeContainer = (props) => {
 
     const [state, setState] = useState(false);
 
     let getState = (state) => setState(state);
-    console.log(props.notesItems);
+
 
     return <div>
-        <h1>HOME</h1>
-        <div onClick={() => {
-            return getState(true)
-        }
-        } >
-            <Card />
-        </div>
-        <ModalDialog toggle={state} getState={getState}>
-            <InfoCard />
-        </ModalDialog>
+        <Home {...props} />
     </div>
 }
 
-export default Home;
+let mapStateToProps = (state) => {
+    return {
+        notesItems: state.notebook_Data,
+    }
+}
+
+let mapDispatchToProps = (dispatch) => {
+    return {
+
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home)
 
 
 // const Home = (props)=>{

@@ -15,7 +15,7 @@ let initialState = {
 }
 
 
-const notebooksDataReducer = (state, action) => {
+const notebooksDataReducer = (state = initialState, action) => {
     return state;
 }
 
