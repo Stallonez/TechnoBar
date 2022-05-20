@@ -1,6 +1,7 @@
 import './Card.css';
 
 const Card = (props) => {
+
     return (
         <div className="mainCard">
             <div className='creditInfo_flex_container'>
@@ -16,15 +17,15 @@ const Card = (props) => {
                 </div>
             </div>
             <div className="imgCard">
-                <img src="https://api.technodom.kz/f3/api/v1/images/272/272/248492_1v.webp" alt="" />
+                <img src={props.item.img} alt="" className="imgCard" />
             </div>
             <div className='productInfo'>
                 <div>Игровой ноутбук</div>
-                <div>Lenovo IdeaPad</div>
+                <div>{props.item.name}</div>
             </div>
             <div className='priceInfo'>
-                <div className='priceInfo__currentPrice'>120000</div>
-                <div className='priceInfo__discountPrice'>123333</div>
+                <div className='priceInfo__currentPrice'>{props.item.price}</div>
+                <div className='priceInfo__discountPrice'>{props.item.price}</div>
             </div>
         </div>
     )
