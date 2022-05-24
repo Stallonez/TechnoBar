@@ -10,7 +10,8 @@ let initialState = {
         { id: 2, name: 'Ноутбук Lenovo IdeaPad 3 i3 1005G1 / 8ГБ / 1000HDD / 15.6 / Win10 / (81WE014SRK)', price: '239 990 ₸', img: "https://www.technodom.kz/media/catalog/product/cache/1366e688ed42c99cd6439df4031862c6/2/7/271257ea3c1ee754453bcc1a95ee92bfe0172a99_233520_1.jpg" },
         { id: 3, name: 'Игровой ноутбук Lenovo Legion 7 i9 10980HK / 32ГБ / 2000SSD / RTX2080 8ГБ / 15.6 / Win10 / (81YT007MRU)', price: '1 599 990 ₸', img: "https://www.technodom.kz/media/catalog/product/cache/1366e688ed42c99cd6439df4031862c6/c/4/c4bf2a07647a3b15a9bdf19301493ec410c08f14_229763_1a.jpg" },
         // { id: 3, name: '', price: '', img: "" }
-    ]
+    ],
+    cart: [],
 }
 
 
