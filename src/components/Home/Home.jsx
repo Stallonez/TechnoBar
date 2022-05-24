@@ -7,24 +7,29 @@ import './Home.css';
 const Home = (props) => {
 
     const [state, setState] = useState(false);
+    const [id, setStateId] = useState();
 
     let getState = (state) => setState(state);
-    console.log(props.notesItems);
+    let getId = (id) => setStateId(id)
 
     return <div>
         <h1>HOME</h1>
-        <div onClick={() => {
-            return getState(true)
-        }
-        } >
-            <div className="row-cards">
-                {props.notesItems.notebook_Asus_Data.map(item => {
-                    return <Card item={item} />
-                })}
-            </div>
+
+        <div className="row-cards">
+            {props.notesItems.notebook_Asus_Data.map(item => {
+                return <div onClick={() => {
+                    getId(item.id)
+                    getState(true)
+                }} >
+                    <Card item={item} />
+                </div>
+            })}
+
         </div>
         <ModalDialog toggle={state} getState={getState}>
-            <InfoCard />
+            <InfoCard
+                id={id}
+            />
         </ModalDialog>
     </div>
 }

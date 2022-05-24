@@ -6,7 +6,7 @@ const InfoCard = (props) => {
         <div className='mainInfoCard__flex'>
             <div className='mainInfoCard__element'>
                 <h1>Ноутбук Asus X515JF Pentium 6805 / 8ГБ / 256SSD / MX130 2ГБ / 15.6 / DOS / (X515JF-EJ257)</h1>
-                <h6>Артикул: 257141</h6>
+                <h6>Артикул: 257141 == ID - {props.id}</h6>
                 <div className='content_row'>
                     <div className='content_element'>
                         <div className='imgBlock'>
